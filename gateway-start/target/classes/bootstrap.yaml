@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        #以配置中心环境做切换
+        namespace: sit
+        server-addr: 172.17.0.70:8848
+        group: GATEWAY-INTERNAL
+        prefix: gateway-internal-application
+        file-extension: yaml
+      discovery:
+        #注册
+        namespace: sit
+        server-addr: 172.17.0.70:8848
+        group: GATEWAY-INTERNAL
+        enabled: true

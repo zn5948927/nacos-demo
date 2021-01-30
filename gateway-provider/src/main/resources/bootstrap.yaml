@@ -1,0 +1,12 @@
+server:
+  port: 7011
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.17.0.70:8848
+        group: GATEWAY-INTERNAL
+        namespace: sit
+  application:
+    name: service-provider
+
